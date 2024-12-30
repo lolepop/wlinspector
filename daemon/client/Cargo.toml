@@ -1,0 +1,15 @@
+[package]
+name = "wlinspectorcli"
+version = "0.1.0"
+edition = "2024"
+build = "build.rs"
+
+[dependencies]
+anyhow = "1.0.94"
+dbus = "0.9.7"
+serde = { version = "1.0.216" }
+serde_json = "1.0.133"
+wlinspector_common = { path = "../common" }
+
+[build-dependencies]
+cbindgen = { git = "https://github.com/mozilla/cbindgen.git" }
